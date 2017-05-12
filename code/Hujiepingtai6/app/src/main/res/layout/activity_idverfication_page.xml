@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="9%h"
+        android:src="@mipmap/bg_nb"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%h"
+        app:layout_marginTopPercent="3%h"
+        android:text="学生/教职工身份认证"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textColor="#404040"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="3%h"
+        android:text="我们将根据实名信息进行信用管理"
+        android:gravity="center"
+        android:textSize="12sp"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="21%h"
+        app:layout_marginTopPercent="5%h"
+        app:layout_marginLeftPercent="15%w"
+        app:layout_marginRightPercent="15%w"
+        android:orientation="vertical"
+        android:showDividers="middle|end"
+        android:divider="@drawable/mydivider">
+
+        <EditText
+            android:id="@+id/edit_text_set_name"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="32%h"
+            android:hint="姓名"
+            android:gravity="center_vertical"
+            android:background="?android:colorBackground"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:id="@+id/edit_text_set_school"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="32%h"
+            android:hint="所在学校"
+            android:gravity="center_vertical"
+            android:background="?android:colorBackground"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:id="@+id/edit_text_set_id"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="32%h"
+            android:hint="学号/教职工编号"
+            android:gravity="center_vertical"
+            android:background="?android:colorBackground"
+            android:textSize="15sp"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <Button
+        android:id="@+id/button_confirm_verication"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%h"
+        app:layout_marginTopPercent="5%h"
+        app:layout_marginLeftPercent="15%w"
+        app:layout_marginRightPercent="15%w"
+        android:text="认证"
+        android:textSize="20sp"
+        android:background="@mipmap/bg_login_button"
+        android:textColor="?android:colorBackground"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

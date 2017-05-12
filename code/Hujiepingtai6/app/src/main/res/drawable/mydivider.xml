@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于设置LinearLayout的分割线的形式 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="1dip" />
+    <solid android:color="#bfbfbf" />
+</shape>

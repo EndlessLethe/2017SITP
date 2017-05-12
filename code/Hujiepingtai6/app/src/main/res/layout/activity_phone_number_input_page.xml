@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="9%h"
+        android:src="@mipmap/bg_nb"
+        />
+
+    <TextView
+        android:id="@+id/text_view_input_phone"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%h"
+        app:layout_marginTopPercent="3%h"
+        android:text="输入手机号"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textColor="#404040"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="3%h"
+        android:text="为方便同学联系你，请输入手机号"
+        android:gravity="center"
+        android:textSize="12sp"/>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%h"
+        app:layout_marginLeftPercent="20%w"
+        app:layout_marginRightPercent="20%w"
+        android:showDividers="end"
+        android:divider="@drawable/mydivider"
+        app:layout_marginTopPercent="5%h"
+        android:orientation="vertical">
+        
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            app:layout_heightPercent="99%h"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                app:layout_widthPercent="100%h"
+                app:layout_heightPercent="80%h"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:text=">+86"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                app:layout_heightPercent="80%h"
+                android:layout_weight="2"
+                android:layout_gravity="top|bottom"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/edit_view_phone_number_input"
+                android:layout_width="0dp"
+                app:layout_heightPercent="80%h"
+                android:layout_weight="9"
+                android:background="?android:colorBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:maxLength="11"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_next_step_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="5%h"
+        android:text="下一步"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:clickable="true"/>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>
