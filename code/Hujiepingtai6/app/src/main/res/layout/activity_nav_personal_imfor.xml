@@ -104,10 +104,11 @@
             app:layout_marginLeftPercent="5%w"/>
 
         <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/sex_pick_layout"
             android:layout_width="match_parent"
             app:layout_marginLeftPercent="5%w"
             app:layout_heightPercent="33.2%h"
-            >
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"

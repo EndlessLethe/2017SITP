@@ -17,7 +17,7 @@
         <activity android:name=".AppIntroductionPage" />
         <activity android:name=".SelectDutyPage" />
         <activity android:name=".MainPage" />
-        <activity android:name=".NavPersonalImfor" />
+        <activity android:name=".NavPersonalImforPage" />
         <activity android:name=".GuideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

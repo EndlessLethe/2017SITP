@@ -143,8 +143,8 @@ public class PickerView extends View //自定义控件PickerView，用于实现�
         mViewHeight = getMeasuredHeight();
         mViewWidth = getMeasuredWidth();
         // 按照View的高度计算字体大小
-        mMaxTextSize = mViewHeight / 4.0f;
-        mMinTextSize = mMaxTextSize / 2f;
+        mMaxTextSize = mViewHeight / 8f;
+        mMinTextSize = mMaxTextSize / 1.5f;
         isInit = true;
         invalidate();
     }
@@ -296,6 +296,10 @@ public class PickerView extends View //自定义控件PickerView，用于实现�
         }
         mTask = new MyTimerTask(updateHandler);
         timer.schedule(mTask, 0, 10);
+    }
+
+    public String getCurSelected() {
+        return mDataList.get(mCurrentSelected);
     }
 
     class MyTimerTask extends TimerTask
