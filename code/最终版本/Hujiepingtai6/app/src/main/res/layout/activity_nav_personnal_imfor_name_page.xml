@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sitp2017.hujiepingtai6.NavPersonnalImforNamePage"
+    android:background="@color/Default_Gray"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_personal_name"
+        android:background="?android:colorBackground"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=" "
+        > <!-- 设置HomeAsUp按钮的图案-->
+
+        <!-- theme制定为 Light.NoActionBar 可以制定为深色字体-->
+        <!-- 写title 要用app:title-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改昵称"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/confirm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="确定"
+            android:layout_marginRight="23dp"
+            android:clickable="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7.2%h"
+        app:layout_marginTopPercent="3%h"
+        app:layout_marginLeftPercent="4%w"
+        app:layout_marginRightPercent="4%w"
+        android:background="@drawable/shape_corner"
+        >
+
+        <EditText
+            android:id="@+id/name_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_centerInParent="true"
+            android:hint="请输入您的新昵称"
+            android:gravity="center"
+            android:background="?android:colorBackground"/>
+    </RelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- App的主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowExitTransition">@transition/slide_end</item>
+        <item name="android:windowEnterAnimation">@transition/slide_start</item>
+        <item name="android:windowReenterTransition">@transition/explode</item>
+        <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+    </style>
+
+    <!-- 验证码输入框的style -->
+    <style name="text_editStyle">
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_width">47dp</item>
+        <item name="android:background">@mipmap/bg_verify</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_blue_0090FF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 滑动导航栏tab的style -->
+    <style name="pagerTabStyle">
+        <item name="pstsShouldExpand">false</item>
+        <item name="pstsUnderlineHeight">0dp</item>
+        <item name="pstsIndicatorHeight">0dp</item>
+        <item name="pstsDividerColor">?android:colorBackground</item>
+        <item name="pstsTextSelectedColor">@color/tab_selected_text_color_ff6600</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:textSize">13sp</item>
+        <item name="pstsScaleZoomMax">0.2</item>
+    </style>
+
+    <!-- toolbar的NavigationButton的style -->
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">100dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="popup_bottom_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+
+</resources>

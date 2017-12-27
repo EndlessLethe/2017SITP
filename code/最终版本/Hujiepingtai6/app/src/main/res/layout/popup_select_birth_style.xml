@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/Default_Gray">
+
+        <TextView
+            android:id="@+id/popup_birth_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/popup_birth_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/Default_White">
+
+        <com.sitp2017.hujiepingtai6.PickerView
+            android:id="@+id/birth_year_picker"
+            app:layout_widthPercent="27%w"
+            app:layout_marginLeftPercent="9.5%w"
+            android:layout_height="match_parent"
+            android:background="@color/Default_White"/>
+        <com.sitp2017.hujiepingtai6.PickerView
+            android:id="@+id/birth_month_picker"
+            app:layout_widthPercent="27%w"
+            android:layout_height="match_parent"
+            android:background="@color/Default_White"/>
+        <com.sitp2017.hujiepingtai6.PickerView
+            android:id="@+id/birth_day_picker"
+            app:layout_widthPercent="27%w"
+            app:layout_marginRightPercent="9.5%w"
+            android:layout_height="match_parent"
+            android:background="@color/Default_White"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sitp2017.hujiepingtai6.PublishPage"
+    android:background="@color/light_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="?android:colorBackground"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        > <!-- 设置HomeAsUp按钮的图案-->
+
+        <!-- theme制定为 Light.NoActionBar 可以制定为深色字体-->
+        <!-- 写title 要用app:title-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/main_page_school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/select_item_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:colorBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物品类型"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充电宝  >"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:colorBackground"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需求描述"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/text_demand_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec_shape"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:gravity="top"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_demand_button"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_shape"
+        android:text="提交"
+        android:textColor="?android:colorBackground"
+        android:textSize="17sp" />
+
+</LinearLayout>

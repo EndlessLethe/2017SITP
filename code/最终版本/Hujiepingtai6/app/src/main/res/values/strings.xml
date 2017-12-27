@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">校园互借平台</string>
+    <string name="app_introduction">
+        校园互借平台是全球第一个校园互借平台，首创“学生老师间共享”模式，用于只需在微信服务号或者APP
+        中使用响应的功能，即可实现校园内的东西互借，随时随地。
+    </string>
+</resources>
